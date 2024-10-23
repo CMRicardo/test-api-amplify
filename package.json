@@ -1,0 +1,21 @@
+{
+  "name": "test-api",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun ./dist/index.js",
+    "build": "bun build ./src/index.ts --target=bun --outfile=./dist/index.js",
+    "dev": "bun --watch ./src/index.ts",
+    "postbuild": "ls bin && chmod +x ./bin/postbuild.sh && ./bin/postbuild.sh"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
