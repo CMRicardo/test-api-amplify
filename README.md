@@ -1,4 +1,4 @@
-# .
+# Test amplify
 
 To install dependencies:
 
