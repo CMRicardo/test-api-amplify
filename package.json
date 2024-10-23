@@ -6,7 +6,7 @@
     "start": "bun ./dist/index.js",
     "build": "bun build ./src/index.ts --target=bun --outfile=./dist/index.js",
     "dev": "bun --watch ./src/index.ts",
-    "postbuild": "ls bin && chmod +x ./bin/postbuild.sh && ./bin/postbuild.sh"
+    "postbuild": "chmod +x ./bin/postbuild.sh && ./bin/postbuild.sh"
   },
   "devDependencies": {
     "@types/bun": "latest",
